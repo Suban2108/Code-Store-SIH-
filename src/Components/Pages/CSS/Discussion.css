@@ -1,0 +1,18 @@
+.discussion{
+    display: flex;
+    padding: 20px;
+}
+
+.discussion-chatsection{
+    width: 90vw;
+    height: 80vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid rgb(217, 209, 209);
+}
+
+.discussion-sidebar{
+   border: 1px solid rgb(217, 209, 209);
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+}

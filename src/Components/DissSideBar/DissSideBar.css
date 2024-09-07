@@ -1,0 +1,84 @@
+.sidebar{
+    height: 80vh;
+}
+
+.sidebar-logo{
+    width: 20vw;
+    padding: 3px;
+    background: rgb(255, 255, 255);
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 10px;
+    box-shadow: 2px 2px 20px 1px #b9b9b9;
+    display: flex;
+    align-items: center;
+    column-gap:5px ;
+}
+
+.sidebar-logo img{
+    width: 57px;
+    height: 57px;
+    max-height: 67px;
+    border: 1px solid rgb(210, 210, 210);
+    margin: 5px;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.sidebar-p{
+    display: flex;
+    width: 200px;
+    height: 70px;
+}
+
+.sidebar-logo p{
+    font-size: 30px;
+    position: relative;
+    top: 12px;
+    font-weight: 500;
+    color: blue;
+}
+
+.sidebar-down{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 15px;
+    row-gap: 15px;
+}
+
+.sidebar-down h5{
+    font-weight: 500;
+    color: rgb(189, 169, 169);
+    font-size: 20px;
+    position: relative;
+    bottom: -30px;
+    right: -5px;
+}
+
+.inbox-img{
+    display:flex;
+    justify-content: space-between;
+}
+
+.count-of-msg-inbox{
+    font-size: 12px;
+    border-radius: 50%;
+    border: 1px solid rgb(190, 190, 190);
+    /* background: rgb(172, 172, 172); */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.inbox-img img{
+    height: 30px;
+    width: 30px;
+}
+
+.inbox-img p{
+    position: relative;
+    left: -60px;
+    font-size: 15px;
+}

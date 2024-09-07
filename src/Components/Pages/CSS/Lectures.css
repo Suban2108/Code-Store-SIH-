@@ -1,0 +1,9 @@
+.lectures{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lectures-right{
+    width: 50%;
+}
+
