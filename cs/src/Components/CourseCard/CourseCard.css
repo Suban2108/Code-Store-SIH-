@@ -1,0 +1,30 @@
+button{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+.coursecard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coursecard p{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.coursecard .title{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.coursecard .price .prices{
+    text-align: left;
+    display: flex;
+    flex-wrap: nowrap;
+}
