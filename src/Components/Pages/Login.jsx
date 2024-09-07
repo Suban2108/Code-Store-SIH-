@@ -6,7 +6,7 @@ const Login = () => {
         <div className="login-container login-neu">
             <div className="login-header">
                 <i className="ri-book-line ri-4x"></i>
-                <h1>Login</h1>
+                <h2>Login</h2>
                 <i className="ri-book-line ri-4x"></i>
             </div>
             <form>
