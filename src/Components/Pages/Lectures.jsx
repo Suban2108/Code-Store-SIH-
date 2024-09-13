@@ -25,6 +25,7 @@ function Lectures() {
             <div className="lectures-right">
                 <LecturesPlaylist />
             </div>
+
         </div>
     )
 }

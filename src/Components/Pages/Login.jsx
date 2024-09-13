@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './CSS/Login.css';
+import SocialLinks from '../SocialLinks/SocialLinks';
 
 const Login = () => {
     return (
@@ -9,7 +10,7 @@ const Login = () => {
                 <h2>Login</h2>
                 <i className="ri-book-line ri-4x"></i>
             </div>
-            <form>
+            <form >
                 <article className='signup-dropdown'>
                     <h3>Select Your Designation</h3>
                     <select name="designation" id="cars">
@@ -38,7 +39,7 @@ const Login = () => {
                             type="email"
                             name="email"
                             id="email"
-                            placeholder="example@gmail.com"
+                            placeholder="Enter your email"
                             required
                         />
                     </section>
@@ -55,6 +56,9 @@ const Login = () => {
                         />
                     </section>
                 </article>
+                <article className='login-forgotPass'>
+                        <Link>Forgot Password?</Link>
+                    </article>
                 <article>
                     <div className="login-butto">
                         <button type="submit">Login</button>
@@ -63,6 +67,11 @@ const Login = () => {
                 <div className="login-already">
                     <h6>Don't have an account?</h6>
                     <Link to='/Signup'><h6> Sign up here </h6></Link>
+                </div>
+
+                <div className="login-thru_social_icons">
+                <p>Login with social media</p>
+                    <SocialLinks/>
                 </div>
             </form>
         </div>

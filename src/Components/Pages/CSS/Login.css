@@ -17,7 +17,7 @@ form {
 }
 
 .login-neu {
-    border: 2px solid black;
+    border: 2px solid rgb(84, 125, 249);
     overflow-y: scroll;
     border-radius: 10px;
     box-shadow: 8px 8px 100px rgb(212, 212, 212);
@@ -179,15 +179,11 @@ label {
 
 select {
     border: 0.5px solid rgb(215, 215, 215);
-    width: 445px !important;
-    height: 50px;
+    width: 400px !important;
+    height: 70px;
     border-radius: 10px;
     padding: 10px;
-}
-
-select option {
-    font-size: 30px !important;
-    font-weight: 600 !important;
+    font-size: 20px !important;
 }
 
 .login-dropdown {
@@ -223,4 +219,21 @@ select option {
     text-decoration: none;
     color: orangered;
     font-size: 25px;
+}
+
+.login-forgotPass{
+    display: flex;
+    justify-content: right;
+    font-size: 20px;
+    position: relative;
+    top: -15px;
+}
+
+.login-forgotPass a{
+    text-decoration: none;
+}
+
+.login-thru_social_icons p{
+    color: rgb(163, 163, 163);
+    font-size: 20px !important;
 }

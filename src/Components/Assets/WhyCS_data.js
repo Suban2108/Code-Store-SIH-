@@ -93,6 +93,7 @@ const courseData = [
         data_src:'',
         image: anytime_anywhere
       },
+      
   ];
   
   export default courseData;

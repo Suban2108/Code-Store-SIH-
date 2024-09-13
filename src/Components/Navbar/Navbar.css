@@ -1,11 +1,17 @@
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-around;
-    padding: 15px !important;
+    padding: 15px;
     box-shadow: 0 1px 3px -2px black;
+    position: fixed; /* Fixes the navbar to the top */
+    top: 0; /* Sticks to the top */
+    width: 100%; /* Ensures it spans the full width of the page */
+    z-index: 1000; /* Ensures the navbar is above other content */
+    background-color: white; /* Ensures the navbar is visible on scroll */
 }
 
-.nav-logo{
+
+.nav-logo {
     display: flex;
     align-items: center;
     /* gap: 10px; */
@@ -13,7 +19,7 @@
     font-weight: 500;
 }
 
-.nav-hr{
+.nav-hr {
     border: none;
     width: 80%;
     height: 3px;
@@ -21,14 +27,14 @@
     border-radius: 10px;
 }
 
-.nav-logo img{
+.nav-logo img {
     width: 300px;
     height: 100px;
     position: relative;
     left: 20px;
 }
 
-.nav-menu{
+.nav-menu {
     display: flex;
     align-items: center;
     list-style: none;
@@ -37,7 +43,7 @@
     font-weight: 500;
 }
 
-.nav-menu li{
+.nav-menu li {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,13 +52,13 @@
     cursor: pointer;
 }
 
-.nav-login-cart{
+.nav-login-cart {
     display: flex;
     align-items: center;
     gap: 45px;
 }
 
-.nav-login-cart button{
+.nav-login-cart button {
     width: 150px;
     height: 58px;
     outline: none;
@@ -61,23 +67,23 @@
     color: #0e0ead;
     font-size: 20px;
     font-weight: 500;
-    background-color: white;
-    cursor: pointer ;
+    background: white;
+    cursor: pointer;
 }
 
-.nav-login-cart button:hover{
+.nav-login-cart button:hover {
     background: rgb(239, 239, 239);
 }
 
-.nav-login-cart button:active{
+.nav-login-cart button:active {
     background: #f3f3f3;
 }
 
-.nav-login-cart img{
+.nav-login-cart img {
     width: 50px;
 }
 
-.nav-cart-count{
+.nav-cart-count {
     width: 22px;
     height: 22px;
     display: flex;
@@ -87,15 +93,32 @@
     margin-left: -57px;
     border-radius: 11px;
     font-size: 14px;
-    background-color: red;
+    background-color: #ff008c;
     color: white;
 }
 
-.profile-icon-cont{
-    border: 5px solid #0e0ead;
-    ;
+.profile-icon-cont {
+    border: 3px solid #0e0ead;
+    width: 50px;
     /* padding: 5px; */
     position: relative;
     right: 10px;
     border-radius: 50%;
+}
+
+.profile-icon-cont img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.login-button-active {
+    border: 5px double  #0e0ead !important; /* New border color */
+    color: #0e0ead !important; /* Keep the same text color */
+    font-weight: 600 !important; /* Make the text bolder */
+}
+
+.login-button-active:hover {
+    background-color: #e5e5e5 !important;
+    color: #0e0ead !important;
 }

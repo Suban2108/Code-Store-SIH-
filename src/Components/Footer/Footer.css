@@ -35,6 +35,7 @@
 .footer-social-icon{
     display: flex;
     gap: 20px;
+    column-gap: 80px;
 }
 
 .footer-icon-container{

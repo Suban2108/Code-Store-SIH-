@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
 import './CSS/Signup.css'
+import SocialLinks from '../SocialLinks/SocialLinks'
 
 const LoginSignup = () => {
   return (
     <div className="signup-container signup-neu">
       <div className="signup-header">
         <i className="ri-book-line ri-4x"></i>
-        <h1>Signup</h1>
+        <h1>Signup</h1> 
         <i className="ri-book-line ri-4x"></i>
       </div>
       <form>
@@ -158,7 +159,7 @@ const LoginSignup = () => {
             </div>
             <section>
               <div className="signup-file">
-                <p>Upload Resume</p>
+                <p>Upload Resume: </p>
                 <input
                   type="file"
                   name="resume"
@@ -188,6 +189,11 @@ const LoginSignup = () => {
           <h6>Already have an account: </h6>
           <Link to='/Login'><h6> Click here </h6></Link>
         </div>
+
+        <div className="login_thru_social_icons">
+                <h6>Signup with social media</h6>
+                    <SocialLinks/>
+                </div>
       </form>
     </div>
   );

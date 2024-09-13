@@ -6,7 +6,7 @@ import TopCourse from '../TopCourse/TopCourse';
 
 const slidePrices = [2000, 3000, 4000, 5000, 6000, 7000, 8500, 1500, 9000];
 
-const Courses = () => {
+const Courses = (props) => {
   return (
     <div className='courses'>
       <SearchBar />
@@ -14,7 +14,7 @@ const Courses = () => {
       <div className="courses-hr"></div>
       <div className="Courses-coursescard">
         <Carousel slides={slidePrices} />
-        <TopCourse />
+        <TopCourse/>
       </div>
     </div>
   );
