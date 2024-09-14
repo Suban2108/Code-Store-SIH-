@@ -8,6 +8,11 @@ import Login from './Components/Pages/Login';
 import Footer from '../src/Components/Footer/Footer'
 import Lectures from '../src/Components/Pages/Lectures'
 import Discussion from './Components/Pages/Discussion';
+import Checkout from '../src/Components/Payment/Checkout';
+import CardPayment from '../src/Components/Payment/CardPayment';
+import NetBanking from '../src/Components/Payment/NetBankingPayement';
+import WalletPayment from '../src/Components/Payment/WalletPayement'
+
 
 
 function App() {
@@ -23,6 +28,10 @@ function App() {
           <Route path='/Login' element={<Login/> }></Route>
           <Route path='/Lectures' element={<Lectures/> }></Route>
           <Route path='/Discussion' element={<Discussion/>}></Route>
+          <Route path='/Checkout' element={<Checkout/>}></Route>
+          <Route path='/CardPayment' element={<CardPayment/>}></Route>
+          <Route path='/NetBanking' element={<NetBanking/>}></Route>
+          <Route path='/WalletPayment' element={<WalletPayment/>}></Route>
         </Route>
       </Routes>
       <Footer/>
